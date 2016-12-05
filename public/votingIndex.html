@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>FCC Voting App</title>
+
+  <link href="/home/ubuntu/workspace/public/css/votingMain.css" rel="stylesheet" type="text/css">
+</head>
+
+<header>
+  <p>Poll Name</p>
+</header>
+
+<body>
+  <div id="voting">
+    <p id="vote prompt">
+      I'd like to vote for...
+    </p>
+   <!-- <form method="post" action="/api/votes"> -->
+        <input type="radio" name='vote' value='option1'>option1<br>
+        <input type='radio' name='vote' value='option2'>option2<br>
+        <input type='radio' name='vote' value='option3'>option3<br>  
+        <input type='submit' class="btn btn-add" value='submit'>
+   <!-- </form> -->
+        <button class="btn btn-delete">reset</button>
+  </div>
+  
+  <div id="results">
+      <p>Results</p>
+      <div id="results1Name">option 1: </div>
+      <div id="results1">?</div>
+      <div id="results2Name">option 2: </div>
+      <div id='results2'>?</div>
+      <div id="results3Name">option 3: </div>
+      <div id='results3'>?</div>
+  </div>
+
+  <script type="text/javascript" src="common/ajax-functions.js"></script>
+  <script type="text/javascript" src="/controllers/voteController.voteClient.js"></script>
+  
+  
+</body>
+
+</html>
